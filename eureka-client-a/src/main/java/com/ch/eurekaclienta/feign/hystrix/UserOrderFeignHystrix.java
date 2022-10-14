@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 public class UserOrderFeignHystrix implements UserOrderFeign {
     @Override
     public Food getFood() {
+        System.out.println("这是一个备胎");
         Food food = new Food();
         food.setName("草草草草");
         food.setPrice("10000000$");
